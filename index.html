@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Diagnóstico de Doenças</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Diagnóstico de Doenças</h1>
+        
+        <div class="symptoms-section">
+            <h2>Selecione seus sintomas:</h2>
+            <div class="symptoms-grid">
+                <label><input type="checkbox" name="symptom" value="febre"> Febre</label>
+                <label><input type="checkbox" name="symptom" value="tosse"> Tosse</label>
+                <label><input type="checkbox" name="symptom" value="dor_corpo"> Dor no Corpo</label>
+                <label><input type="checkbox" name="symptom" value="dor_cabeca"> Dor de Cabeça</label>
+                <label><input type="checkbox" name="symptom" value="coriza"> Coriza</label>
+                <label><input type="checkbox" name="symptom" value="espirros"> Espirros</label>
+                <label><input type="checkbox" name="symptom" value="falta_ar"> Falta de Ar</label>
+                <label><input type="checkbox" name="symptom" value="coceira"> Coceira</label>
+            </div>
+            <button id="diagnoseBtn">Diagnosticar</button>
+        </div>
+
+        <div class="result-section">
+            <h2>Possíveis Diagnósticos:</h2>
+            <div id="diagnosisResult"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
